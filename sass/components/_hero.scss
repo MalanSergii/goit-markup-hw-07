@@ -1,0 +1,55 @@
+.hero {
+  background: var(--hero-footer-bgcolor);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-paige/hero/hero.jpg);
+  background-color: #c4c4c4;
+  max-width: 1600px;
+  max-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .button {
+    @include font-w_font-s_line-h_letter-s(700, 16px, 1.87, 0.06em);
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.87;
+    // letter-spacing: 0.06em;
+    color: var(--third-color);
+    background: var(--active-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    transition: background var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background: #188ce8;
+      color: var(--third-color);
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  &-title {
+    @include font-w_font-s_line-h_letter-s(900, 44px, 1.36, 0.06em);
+    // font-weight: 900;
+    // font-size: 44px;
+    max-width: 696px;
+    // line-height: 1.36;
+    // letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: var(--third-color);
+    margin-bottom: 30px;
+  }
+}

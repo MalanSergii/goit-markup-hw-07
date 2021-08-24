@@ -1,0 +1,59 @@
+.specials {
+  padding-top: 94px;
+
+  .item {
+    &-title {
+      @include font-w_font-s_line-h_letter-s(700, 14px, 1.14);
+      font-style: normal;
+      // font-weight: 700;
+      // font-size: 14px;
+      // line-height: 1.14;
+      // letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+    &-text {
+      @include font-w_font-s_line-h_letter-s(400, 14px, 1.71);
+      font-style: normal;
+      // font-weight: 400;
+      // font-size: 14px;
+      // line-height: 1.71;
+      // letter-spacing: 0.03em;
+      color: var(--second-color);
+      margin-bottom: 0;
+    }
+  }
+}
+.spec {
+  &-list {
+    display: flex;
+  }
+  &-item {
+    background-repeat: no-repeat;
+    width: 270px;
+
+    .item-image {
+      width: 270px;
+      height: 120px;
+      background: url(../images/main-paige/rectangle3.jpg);
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &-title {
+    @include font-w_font-s_line-h_letter-s(700, 36px, 1.16);
+    font-style: normal;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.16;
+    text-align: center;
+    // letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  /* remove all decoration from links */
+  display: block;
+  text-decoration: none;
+}
+.list {
+  /* remove all markrers from ul */
+  list-style: none;
+}
+.card {
+  /* фон карточки*/
+  background: var(--third-color);
+}

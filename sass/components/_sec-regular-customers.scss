@@ -1,0 +1,46 @@
+.regular-customers {
+  padding: 94px 0;
+
+  .link-image {
+    fill: #afb1b8;
+    transition: fill var(--transition-duration) var(--timing-function);
+  }
+}
+
+.customers-title {
+  @include font-w_font-s_line-h_letter-s(700, 36px, 1.16);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.16;
+  text-align: center;
+  // letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--accent-color);
+}
+
+.customers-list {
+  display: flex;
+
+  .list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--active-color);
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: var(--active-color);
+    }
+  }
+}
