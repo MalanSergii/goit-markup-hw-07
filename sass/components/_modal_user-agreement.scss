@@ -1,0 +1,36 @@
+.user-agreement {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.user-agreement__form {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.user-agreement__check-box {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  display: block;
+  height: 16px;
+  width: 16px;
+  background-image: url(../images/unchacked.svg);
+  background-repeat: no-repeat;
+
+  .user-agreement__form:checked + & {
+    background-image: url(../images/checked.svg);
+  }
+}
+
+.user-agreement__text {
+  @include font-w_font-s_line-h_letter-sp(400, 14px, 1.71);
+  color: $second-color;
+  margin-bottom: 30px;
+}
+
+.user-agreement__link {
+  color: $active-color;
+}

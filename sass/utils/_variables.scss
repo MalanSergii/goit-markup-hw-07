@@ -1,10 +1,21 @@
-:root {
-  --accent-color: #212121; /* navigation, titles */
-  --second-color: #757575; /* contact list, text*/
-  --active-color: #2196f3; /* first part logo, hover and focus, button bg */
-  --third-color: #ffffff; /* background */
-  --hero-footer-bgcolor: #2f303a;
-  --bgcolor-second: #f5f4fa; /* bg color cection(our team) and portfolio buttons*/
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-duration: 250ms;
-}
+$font-family-main: "Roboto", sans-serif;
+$font-family-sec: "Raleway", sans-serif;
+
+$active-color: #2196f3;
+$accent-color: #212121;
+$second-color: #757575;
+$active-color: #2196f3;
+$third-color: #ffffff;
+$hero-footer-bgcolor: #2f303a;
+$bgcolor-second: #f5f4fa;
+$btn_bgcolor_on_focus-hov: #188ce8;
+$backdrop-bg: rgba(0, 0, 0, 0.2);
+$modal-te-ph: rgba(117, 117, 117, 0.5);
+$bg_job-text: rgba(47, 48, 58, 0.8);
+
+$bg_projects-overlay: rgba(33, 150, 243, 0.9);
+
+$fill-main: #afb1b8;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 500ms;

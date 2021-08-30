@@ -1,0 +1,52 @@
+.footer-form__text {
+  @include font-w_font-s_line-h_letter-sp(700, 14px, 1.14);
+  text-transform: uppercase;
+  color: $third-color;
+  margin-bottom: 20px;
+}
+
+.footer-form__email {
+  display: inline-block;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  margin-right: 12px;
+  color: $third-color;
+
+  &::placeholder {
+    @include font-w_font-s_line-h_letter-sp(400, 16px, 1.25);
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__btn {
+  position: relative;
+  display: inline-block;
+  border: none;
+  text-align: left;
+  width: 200px;
+  background: $active-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $third-color;
+  padding: 10px 29px;
+  font-family: $font-family-main;
+  @include font-w_font-s_line-h_letter-sp(700, 16px, 1.87, 0.06em);
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-form__icon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 13px;
+  right: 28px;
+  fill: $third-color;
+}

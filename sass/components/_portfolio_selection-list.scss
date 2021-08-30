@@ -1,0 +1,41 @@
+.selection-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.selection-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.selection-list__button {
+  font-style: normal;
+  text-align: center;
+  font-family: $font-family-main;
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(500, 16px, 1.62);
+  text-align: center;
+  background: $bgcolor-second;
+  color: $accent-color;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background $transition-duration $timing-function,
+    box-shadow $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background: $active-color;
+    color: $third-color;
+  }
+}
+
+.selection-list__button--current {
+  background: $active-color;
+  color: $third-color;
+}

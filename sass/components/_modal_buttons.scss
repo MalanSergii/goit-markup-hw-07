@@ -1,0 +1,44 @@
+.modal__btn--submit {
+  border: none;
+  display: block;
+  margin: auto auto;
+  padding: 10px 55px;
+  background: $active-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: $font-family-main;
+  @include font-w_font-s_line-h_letter-sp(700, 16px, 1.87, 0.06em);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $third-color;
+  cursor: pointer;
+}
+
+.modal__btn--close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  background-size: contain;
+  background-color: $third-color;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.modal__icon--close {
+  fill: rgba(0, 0, 0, 1);
+  transition: fill $transition-duration $timing-function;
+
+  .modal__btn--close:hover &,
+  .modal__btn--close:focus & {
+    fill: $active-color;
+  }
+}

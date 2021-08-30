@@ -1,0 +1,71 @@
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-list__item {
+  box-sizing: border-box;
+  min-width: 370px;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+  &:not(:nth-last-child(3n + 1)) {
+    margin-right: 30px;
+  }
+}
+
+.projects-list__link {
+  transition: box-shadow $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.projects-list__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-list__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, +100%);
+  display: block;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  @include font-w_font-s_line-h_letter-sp(400, 18px, 1.56);
+  color: $third-color;
+  background: $bg_projects-overlay;
+  transition: opacity $transition-duration $timing-function;
+  transition: transform $transition-duration $timing-function;
+
+  .projects-list__link:hover &,
+  .projects-list__link:focus & {
+    transform: translate(0, 0);
+  }
+}
+
+.projects-list__context {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.projects-list__title {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(700, 18px, 2, 0.06em);
+  margin-bottom: 4px;
+  color: $accent-color;
+}
+.projects-list__text {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(400, 16px, 1.87);
+  color: $second-color;
+}

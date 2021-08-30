@@ -1,0 +1,26 @@
+.footer__info {
+  margin-right: 70px;
+}
+
+.address__text {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(400, 14px, 1.71);
+  color: $third-color;
+  margin-bottom: 9px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(400, 14px, 1.71);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}

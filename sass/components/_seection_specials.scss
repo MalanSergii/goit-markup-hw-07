@@ -1,0 +1,41 @@
+.specials {
+  padding-top: 94px;
+}
+
+.specials__list {
+  display: flex;
+}
+
+.specials__item {
+  background-repeat: no-repeat;
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.specials__title {
+  @include font-w_font-s_line-h_letter-sp(700, 14px, 1.14);
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: $accent-color;
+}
+
+.specials__image {
+  width: 270px;
+  height: 120px;
+  background: url(../images/main-paige/rectangle3.jpg);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specials__text {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(400, 14px, 1.71);
+  color: $second-color;
+  margin-bottom: 0;
+}

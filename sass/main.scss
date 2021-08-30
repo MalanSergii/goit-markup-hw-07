@@ -1,6 +1,6 @@
 // utils
-@import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/variables";
 @import "./utils/mixins";
 
 // base
@@ -8,16 +8,25 @@
 @import "./base/conteiner";
 
 // components
-@import "./components/logo";
 @import "./components/header";
+@import "./components/logo";
+@import "./components/header_nav-menu";
+@import "./components/header_nav-list";
+@import "./components/header_contacts-list";
 @import "./components/hero";
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./components/form";
-@import "./components/footer-form";
-@import "./components/sec-specials";
-@import "./components/sec-our-job";
-@import "./components/sec-our-team";
-@import "./components/sec-regular-customers";
+@import "./components/modal_user-agreement";
+@import "./components/modal_buttons";
+@import "./components/seection_specials";
+@import "./components/section_our-job";
+@import "./components/section_our-team";
+@import "./components/section_our-tem_description-card";
+@import "./components/section_regular-customers";
 @import "./components/footer";
+@import "./components/footer-info";
+@import "./components/footer_social-links";
+@import "./components/footer_form";
 @import "./components/portfolio";
+@import "./components/portfolio_selection-list";
+@import "./components/portfolio_projects-list";

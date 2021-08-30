@@ -1,0 +1,28 @@
+.our-team {
+  background: $bgcolor-second;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team__title {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(700, 36px, 1.16);
+  text-align: center;
+  color: $accent-color;
+  margin-bottom: 50px;
+}
+
+.our-team__list {
+  display: flex;
+}
+
+.our-team__item {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

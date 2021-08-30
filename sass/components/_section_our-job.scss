@@ -1,0 +1,41 @@
+.our-job {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-job__title {
+  font-style: normal;
+  @include font-w_font-s_line-h_letter-sp(700, 36px, 1.16);
+  text-align: center;
+  color: $accent-color;
+  margin-bottom: 50px;
+}
+
+.our-job__list {
+  display: flex;
+}
+
+.our-job__item {
+  width: 370px;
+  position: relative;
+  z-index: 1;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.our-job__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 370px;
+  height: 70px;
+  padding: 27px;
+  @include font-w_font-s_line-h_letter-sp(700, 14px, 1.14);
+  text-align: center;
+  text-transform: uppercase;
+  background: $bg_job-text;
+  color: $third-color;
+}
